@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "dGnome",
+  "description": "Es siete veces mas fuerte que tu",
+  "version": "1.0",
+	"icons": {
+    	"48": "icon48.png",
+        "128": "icon128.png"
+    },
+	"content_scripts": [
+	    {
+	      "matches": ["*://*/*"],
+	      "js": ["jquery.js", "dGnome.js"]
+	    }
+  	]
+}
